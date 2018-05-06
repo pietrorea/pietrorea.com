@@ -10,12 +10,13 @@ class BlogIndex extends React.Component {
   render() {
     const siteTitle = get(this, 'props.data.site.siteMetadata.title')
     const posts = get(this, 'props.data.allMarkdownRemark.edges')
+    const filteredPosts = posts.filter((post) => post.node.fields.slug !== '/README/');
 
     return (
       <div>
         <Helmet title={siteTitle} />
         <Bio />
-        {posts.map(({ node }) => {
+        {filteredPosts.map(({ node }) => {
           const title = get(node, 'frontmatter.title') || node.fields.slug
           return (
             <div key={node.fields.slug}>
