@@ -18,7 +18,7 @@ class Bio extends React.Component {
       >
         <img
           src={profilePic}
-          alt={`Kyle Mathews`}
+          alt={`Pietro Rea`}
           style={{
             marginRight: rhythm(1 / 2),
             marginBottom: 0,
