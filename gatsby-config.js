@@ -2,8 +2,8 @@ module.exports = {
   siteMetadata: {
     title: 'Pietro Rea\'s Blog',
     author: 'Pietro Rea',
-    description: 'A starter blog demonstrating what Gatsby can do.',
-    siteUrl: 'https://gatsbyjs.github.io/gatsby-starter-blog/',
+    description: 'My place on the \'net.',
+    siteUrl: 'https://www.pietrorea.com/',
   },
   pathPrefix: '/blog',
   plugins: [
