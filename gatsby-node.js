@@ -71,7 +71,7 @@ exports.onCreateNode = ({ node, boundActionCreators, getNode }) => {
   const { createNodeField } = boundActionCreators
 
   if (node.internal.type === `MarkdownRemark`) {
-    const slug = `${node.frontmatter.path}`
+    const slug = `blog${node.frontmatter.path}`
     createNodeField({ node, name: `slug`, value: slug })
   }
 }
