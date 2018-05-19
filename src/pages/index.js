@@ -10,7 +10,7 @@ class BlogIndex extends React.Component {
   render() {
     const siteTitle = get(this, 'props.data.site.siteMetadata.title')
     const posts = get(this, 'props.data.allMarkdownRemark.edges')
-    const filteredPosts = posts.filter((post) => post.node.fields.slug !== 'undefined');
+    const filteredPosts = posts.filter((post) => !post.node.fields.slug.includes('undefined'));
 
     return (
       <div>
