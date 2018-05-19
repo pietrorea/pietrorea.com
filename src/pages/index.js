@@ -10,13 +10,12 @@ class BlogIndex extends React.Component {
   render() {
     const siteTitle = get(this, 'props.data.site.siteMetadata.title')
     const posts = get(this, 'props.data.allMarkdownRemark.edges')
-    const filteredPosts = posts.filter((post) => !post.node.fields.slug.includes('undefined'));
 
     return (
       <div>
         <Helmet title={siteTitle} />
         <Bio />
-        {filteredPosts.map(({ node }) => {
+        {posts.map(({ node }) => {
           const title = get(node, 'frontmatter.title') || node.fields.slug
           return (
             <div key={node.fields.slug}>
@@ -48,7 +47,10 @@ export const pageQuery = graphql`
         title
       }
     }
-    allMarkdownRemark(sort: { fields: [frontmatter___date], order: DESC }) {
+    allMarkdownRemark(
+      sort: { fields: [frontmatter___date], order: DESC },
+      filter: { frontmatter: { layout: { eq: "post"}}}
+    ) {
       edges {
         node {
           excerpt(pruneLength: 280)
