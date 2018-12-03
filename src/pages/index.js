@@ -49,7 +49,16 @@ export const pageQuery = graphql`
     }
     allMarkdownRemark(
       sort: { fields: [frontmatter___date], order: DESC },
-      filter: { frontmatter: { layout: { eq: "post"}}}
+      filter: { 
+        frontmatter: { 
+          layout: { 
+            eq: "post"
+          },
+          status: {
+            eq: "published"
+          }
+        }
+      }
     ) {
       edges {
         node {

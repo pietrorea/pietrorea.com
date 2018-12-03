@@ -43,7 +43,7 @@ class BlogPostTemplate extends React.Component {
             padding: 0,
           }}
         >
-          {previous && (
+          {this.isPostValid(previous) && (
             <li>
               <Link to={`/${previous.fields.slug}`} rel="prev">
                 ← {previous.frontmatter.title}
@@ -51,7 +51,7 @@ class BlogPostTemplate extends React.Component {
             </li>
           )}
 
-          {next && (
+          {this.isPostValid(next) && (
             <li>
               <Link to={`/${next.fields.slug}`} rel="next">
                 {next.frontmatter.title} →
@@ -61,6 +61,10 @@ class BlogPostTemplate extends React.Component {
         </ul>
       </div>
     )
+  }
+
+  isPostValid(post) {
+    return post && (post.frontmatter.status === 'published');
   }
 }
 
@@ -78,8 +82,8 @@ export const pageQuery = graphql`
       id
       html
       frontmatter {
-        title
         date(formatString: "MMMM DD, YYYY")
+        title
       }
     }
   }

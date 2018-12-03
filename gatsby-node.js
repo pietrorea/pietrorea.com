@@ -19,7 +19,8 @@ exports.createPages = ({ graphql, boundActionCreators }) => {
                     slug
                   }
                   frontmatter {
-                    title
+                    title,
+                    status
                   }
                 }
               }
