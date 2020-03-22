@@ -5,6 +5,7 @@ import 'typeface-montserrat'
 import 'typeface-merriweather'
 
 import profilePic from './profile-pic.jpg'
+import { Link } from 'gatsby'
 import { rhythm } from '../utils/typography'
 
 class Bio extends React.Component {
@@ -27,12 +28,26 @@ class Bio extends React.Component {
             borderRadius: rhythm(1),
           }}
         />
-        <p>
-          Written by <strong>Pietro Rea</strong> who lives and works in Washington D.C. building useful things.{' '}
-          <a href="https://twitter.com/pietrorea">
-            You should follow him on Twitter
-          </a>
-        </p>
+        <div>
+          <div>
+            Written by <strong>Pietro Rea</strong>, a software engineer in Washington D.C.
+          </div>
+            <a href="https://github.com/pietrorea">
+              Github
+            </a>
+            {'  '}
+            <a href="https://twitter.com/pietrorea">
+            Twitter
+            </a>
+            {'  '}
+            <a href="https://www.linkedin.com/in/pietrorea/">
+              Linkedin
+            </a>
+            {'  '}
+            <Link to="/now">
+              Now
+            </Link>
+        </div>
       </div>
     )
   }

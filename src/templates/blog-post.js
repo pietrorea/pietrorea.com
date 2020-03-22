@@ -67,7 +67,7 @@ class BlogPostTemplate extends React.Component {
   }
 
   isPostValid(post) {
-    return post && (post.frontmatter.status === 'published');
+    return post && post.frontmatter.status === 'published' && post.frontmatter.layout === 'post';
   }
 }
 
