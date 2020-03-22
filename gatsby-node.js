@@ -68,7 +68,7 @@ exports.onCreateNode = ({ node, actions, getNode }) => {
   }
 }
 
-exports.onCreateNode = ({ node }) => {
+exports.onCreateNode = ({ node, actions }) => {
   const { createNodeField } = actions
 
   if (node.internal.type === `MarkdownRemark`) {
