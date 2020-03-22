@@ -27,12 +27,26 @@ class Bio extends React.Component {
             borderRadius: rhythm(1),
           }}
         />
-        <p>
-          Written by <strong>Pietro Rea</strong> who lives and works in Washington D.C. building useful things.{' '}
-          <a href="https://twitter.com/pietrorea">
-            You should follow him on Twitter
-          </a>
-        </p>
+        <div>
+          <div>
+            Written by <strong>Pietro Rea</strong>, a software in Washington D.C.
+          </div>
+            <a href="https://github.com/pietrorea">
+              Github
+            </a>
+            {'  '}
+            <a href="https://twitter.com/pietrorea">
+            Twitter
+            </a>
+            {'  '}
+            <a href="https://www.linkedin.com/in/pietrorea/">
+              Linkedin
+            </a>
+            {'  '}
+            <a href="/blog/now">
+              Now
+            </a>
+        </div>
       </div>
     )
   }
