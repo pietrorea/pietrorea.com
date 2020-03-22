@@ -5,6 +5,7 @@ import 'typeface-montserrat'
 import 'typeface-merriweather'
 
 import profilePic from './profile-pic.jpg'
+import { Link } from 'gatsby'
 import { rhythm } from '../utils/typography'
 
 class Bio extends React.Component {
@@ -29,7 +30,7 @@ class Bio extends React.Component {
         />
         <div>
           <div>
-            Written by <strong>Pietro Rea</strong>, a software in Washington D.C.
+            Written by <strong>Pietro Rea</strong>, a software engineer in Washington D.C.
           </div>
             <a href="https://github.com/pietrorea">
               Github
@@ -43,9 +44,9 @@ class Bio extends React.Component {
               Linkedin
             </a>
             {'  '}
-            <a href="/blog/now">
+            <Link to="/now">
               Now
-            </a>
+            </Link>
         </div>
       </div>
     )

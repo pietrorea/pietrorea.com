@@ -18,8 +18,9 @@ exports.createPages = ({ graphql, actions }) => {
                     slug
                   }
                   frontmatter {
-                    title,
+                    title
                     status
+                    layout
                   }
                 }
               }
@@ -67,11 +68,11 @@ exports.onCreateNode = ({ node, actions, getNode }) => {
   }
 }
 
-exports.onCreateNode = ({ node, actions, getNode }) => {
+exports.onCreateNode = ({ node }) => {
   const { createNodeField } = actions
 
   if (node.internal.type === `MarkdownRemark`) {
-    const slug = `blog${node.frontmatter.path}`
+    const slug = `${node.frontmatter.path}`
     createNodeField({ node, name: `slug`, value: slug })
   }
 }
