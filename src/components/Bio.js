@@ -32,15 +32,15 @@ class Bio extends React.Component {
           <div>
             Written by <strong>Pietro Rea</strong>, a software engineer in Washington D.C.
           </div>
-            <a href="https://github.com/pietrorea">
+            <a href="https://github.com/pietrorea" target="_blank">
               Github
             </a>
             {'  '}
-            <a href="https://twitter.com/pietrorea">
+            <a href="https://twitter.com/pietrorea" target="_blank">
             Twitter
             </a>
             {'  '}
-            <a href="https://www.linkedin.com/in/pietrorea/">
+            <a href="https://www.linkedin.com/in/pietrorea/" target="_blank">
               Linkedin
             </a>
             {'  '}
