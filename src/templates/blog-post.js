@@ -47,7 +47,8 @@ class BlogPostTemplate extends React.Component {
           >
             {this.isPostValid(previous) && (
               <li>
-                <Link to={`/${previous.fields.slug}`} rel="prev">
+                
+                <Link to={`${previous.fields.slug}`} rel="prev">
                   ← {previous.frontmatter.title}
                 </Link>
               </li>
@@ -55,7 +56,7 @@ class BlogPostTemplate extends React.Component {
 
             {this.isPostValid(next) && (
               <li>
-                <Link to={`/${next.fields.slug}`} rel="next">
+                <Link to={`${next.fields.slug}`} rel="next">
                   {next.frontmatter.title} →
                 </Link>
               </li>
