@@ -1,10 +1,10 @@
 {
-  "name": "gatsby-starter-blog",
-  "description": "Starter Gatsby Blog",
+  "name": "pietrorea.com",
+  "description": "Static site powering pietrorea.com",
   "version": "1.0.0",
-  "author": "Kyle Mathews <mathews.kyle@gmail.com>",
+  "author": "Pietro Rea <pietro@sweetpeamobile.com>",
   "bugs": {
-    "url": "https://github.com/gatsbyjs/gatsby-starter-blog/issues"
+    "url": "https://github.com/pietrorea/pietrorea.com/issues"
   },
   "dependencies": {
     "@babel/core": "^7.9.0",
@@ -57,7 +57,6 @@
     "url": "git+https://github.com/gatsbyjs/gatsby-starter-blog.git"
   },
   "scripts": {
-    "deploy": "gatsby build && aws s3 sync --acl public-read --sse --delete ./public s3://pietrorea.com --profile GatsbyS3SyncUser",
     "dev": "gatsby develop",
     "fix-semi": "eslint --quiet --ignore-pattern node_modules --ignore-pattern public --parser babel-eslint --no-eslintrc --rule '{\"semi\": [2, \"never\"], \"no-extra-semi\": [2]}' --fix gatsby-node.js",
     "format": "prettier --trailing-comma es5 --no-semi --single-quote --write 'src/**/*.js' 'src/**/*.md'",
