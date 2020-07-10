@@ -4,7 +4,7 @@ import Helmet from 'react-helmet'
 import get from 'lodash/get'
 
 import Bio from '../components/Bio'
-import Layout from '../components/Layout'
+import Layout from '../components/layout-component'
 import { rhythm, scale } from '../utils/typography'
 
 class BlogPostTemplate extends React.Component {

@@ -2,7 +2,7 @@ import React from 'react'
 import { Link, graphql } from 'gatsby'
 import get from 'lodash/get'
 import Helmet from 'react-helmet'
-import Layout from '../components/Layout'
+import Layout from '../components/layout-component'
 
 import Bio from '../components/Bio'
 import { rhythm } from '../utils/typography'
