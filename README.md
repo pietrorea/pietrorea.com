@@ -1,13 +1,22 @@
 # pietrorea.com
 
-This is the source code for [https://pietrorea.com](https://github.com/gatsbyjs/gatsby-starter-blog). The site is currently powered by [Gatsby.js](https://github.com/gatsbyjs/) and hosted on AWS. The current Gatsby theme is a derivative of the [gatsby-starter-blog](https://github.com/gatsbyjs/gatsby-starter-blog) template. Gatsby is great if you want to learn about React and GraphQL.
-
-By the way, only the source code for the site lives here. The actual content lives in a [separate repo](https://github.com/pietrorea/blog). This separation of concerns gives me the freedom to evolve and re-platform the blog over time without having to muck around with the format of the content. If you were wondering, on an infinite timeline, yes I'm planning to write my own blogging engine in Swift. 
+This is the source code and content for [https://www.pietrorea.com](https://www.pietrorea). The site is currently powered by [Gatsby.js](https://github.com/gatsbyjs/) and hosted on Netlify. The current Gatsby theme is a derivative of the [gatsby-starter-blog](https://github.com/gatsbyjs/gatsby-starter-blog) template. Gatsby is great if you want to learn about React and GraphQL.
 
 ## Set up
 
-- Pre-reqs: make sure `node`, `yarn`, `nvm` are installed. Then install node 10 using nvm.
+- Prerequisites: make sure `node`, `yarn`, `nvm` are installed. Then install node 10 using nvm.
 - Clone [this repo](https://github.com/pietrorea/pietrorea.com) and run `yarn install`. Install peer dependencies.
-- Clone [https://github.com/pietrorea/blog](https://github.com/pietrorea/blog) in the same directory as `pietrorea.com`
-- Both repos have to at the same level because `pietrorea.com` references `blog` in `gatsby-config`.
 - Run `yarn dev` to run locally.
+
+# Content
+
+The blog posts and pages are written in Markdown and they are located in the `/src/content` directory.
+
+The posts use Jekyll-inspired [frontmatter](https://jekyllrb.com/docs/frontmatter/) to communicate metadata back to the blogging engine. The frontmatter variables currently supported are listed below:
+
+- **title**: The title of the blog post
+- **path**: The relative URL path for the blog post or page (e.g. `/2018/05/31/new-blogging-platform-gatsby-js` or `/now`). To prevent broken links, the blogging engine should not apend a URL prefix such as`blog` in front of this path. For example, `/path-example` should always be served from `https://pietrorea.com/path-example`. 
+- **date**: Date of publication (e.g. 2018-05-31)
+- **author**: Blog post author
+- **layout**: Layout that the blogging engine should use. The only supported layout is `post` at the moment.
+- **status**: The status of the blog post. Supported values are `published` and `draft`.
