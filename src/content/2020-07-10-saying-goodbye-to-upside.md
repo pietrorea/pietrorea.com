@@ -32,7 +32,7 @@ What also surprised is how much we gelled as a team as time went on. Going to wo
 
 That's Turboprop a couple of weeks before the COVID shutdowns. 
 
-If everything was so hunky-dory, you might be wondering...what happened? In good times, startups are risky and hard. Add a global pandemic that decimates the travel industry and a travel startup becomes unsustainable. It was a very difficult and emotional decision, and if the pandemic hadn’t happened I’m certain I'd still be there. In the end it felt like the right time to say goodbye. Upside marches forward with some great people on board and I truly wish them the best.
+If everything was so hunky-dory, you might be wondering...what happened? In good times, startups are risky and hard. Add a global pandemic that decimates the travel industry and a travel startup becomes unsustainable. It was a very difficult and emotional decision but in the end it felt like the time to say goodbye. Upside marches forward with some great people and I truly wish them the best.
 
 So what's next for me? I've joined Capital One's mobile engineering team. I'll be working on features for Capital One's mobile app customers. This is exciting to me for several reasons. 
 
