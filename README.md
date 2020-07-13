@@ -2,7 +2,7 @@
 
 This is the source code and content for [https://www.pietrorea.com](https://www.pietrorea). The site is currently powered by [Gatsby.js](https://github.com/gatsbyjs/) and hosted on Netlify. The current Gatsby theme is a derivative of the [gatsby-starter-blog](https://github.com/gatsbyjs/gatsby-starter-blog) template. Gatsby is great if you want to learn about React and GraphQL.
 
-## Set up
+# Set up
 
 - Prerequisites: make sure `node`, `yarn`, `nvm` are installed. Then install node 10 using nvm.
 - Clone [this repo](https://github.com/pietrorea/pietrorea.com) and run `yarn install`. Install peer dependencies.
