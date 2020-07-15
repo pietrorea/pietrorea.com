@@ -38,6 +38,12 @@ const typography = Typography({
     "ul,ol": {
       marginLeft: 0,
     },
+    ['@media (prefers-color-scheme: dark)']: {
+      body: {
+        backgroundColor: '#323232',
+        color: 'rgba(255,255,255,0.85)'
+      }
+    },
     ['@media only screen and (max-width:480px)']: {
       "ul,ol": {
         marginLeft: rhythm(1),
