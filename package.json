@@ -36,8 +36,7 @@
     "typeface-merriweather": "0.0.43",
     "typeface-montserrat": "0.0.43",
     "typescript": "^3.8.3",
-    "typography": "^0.16.17",
-    "typography-theme-wordpress-2016": "^0.15.10"
+    "typography": "^0.16.17"
   },
   "devDependencies": {
     "babel-preset-gatsby": "^0.1.6",
