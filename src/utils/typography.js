@@ -65,12 +65,11 @@ const typography = Typography({
       fontStyle: "italic",
     },
     a: {
-      boxShadow: "0 1px 0 0 currentColor",
       color: "#007acc",
       textDecoration: "none",
     },
     "a:hover,a:active": {
-      boxShadow: "none",
+      textDecoration: "underline",
     },
     "mark,ins": {
       background: "#007acc",
