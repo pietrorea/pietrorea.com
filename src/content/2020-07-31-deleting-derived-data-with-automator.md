@@ -1,6 +1,6 @@
 ---
 title: "Deleting Derived Data with Automator"
-path: /2020/07/31/derived-data-exterminator-app 
+path: /2020/07/31/deleting-derived-data-with-automator 
 date: 2020-07-31
 author: Pietro Rea
 layout: post
