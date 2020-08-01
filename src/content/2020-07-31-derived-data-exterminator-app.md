@@ -1,5 +1,5 @@
 ---
-title: "Derived Data Exterminator.app"
+title: "Deleting Derived Data with Automator"
 path: /2020/07/31/derived-data-exterminator-app 
 date: 2020-07-31
 author: Pietro Rea
