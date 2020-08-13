@@ -7,7 +7,7 @@ layout: post
 status: draft
 ---
 
-**Note:** This page is under construction! The page is published but not linked from anywhere. I'm currently gathering feedback and making changes. **Pangloss** means “all languages” in Greek and is a character in Voltaire’s Candide. To be “Panglossian” means to be characterized or given to extreme optimism, especially in the face of hardship or adversity.
+**Note:** This page is under construction! The page is published but not linked from anywhere. I’m currently gathering feedback and making changes. **Pangloss** means “all languages” in Greek and is a character in Voltaire’s Candide. To be “Panglossian” means to be characterized or given to extreme optimism, especially in the face of hardship or adversity.
 
 
 As of 2015, there are 53 million Spanish speakers in the United States. This alone makes the United States the second largest concentration of Spanish speakers in the world, after Mexico. Of this number, the majority are immigrants or recent immigrants from other countries.
@@ -41,7 +41,7 @@ What if the same methods could be applied to learning a second language? The lan
 
 ### Integrated
 
-Pangloss seeks to integrate the liberal arts with technology in new and innovative ways for the goal of English SLA. It's not enough to distribute engaging and personalized language learning material online. We don't need more blogs and YouTubers that tackle the subject. We do need a deeply considered, integrated platform that melds content with technology. We're almost talking about creating new mediums and types of media for the purpose of learning a new language.
+Pangloss seeks to integrate the liberal arts with technology in new and innovative ways for the goal of English SLA. It’s not enough to distribute engaging and personalized language learning material online. We don’t need more blogs and YouTubers that tackle the subject. We do need a deeply considered, integrated platform that melds content with technology. We’re almost talking about creating new mediums and types of media for the purpose of learning a new language.
 
 Integration also refers to taking an integrated, holistic, look at the learner. Learning a language does not happen in isolation. In particular, when you’re learning the primary language spoken around you, there is a certain level of fear and uncertainty. An integrated approach takes in the learner’s personality, psychology and learning styles into consideration.
 

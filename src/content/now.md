@@ -7,7 +7,7 @@ layout: page
 status: published
 ---
 
-Here’s what I’m currently working on (last updated Jul 09, 2020):
+Here’s what I’m currently working on (last updated Aug 13, 2020):
 
 - As of this writing, I'm one week into my new job at Capital One. After almost exactly three years at [Upside](https://upside.com), I joined Capital One's mobile engineering team to work on their iOS app. After a couple years doing full stack web development, this is a nice return to Swift and native mobile development. 
 - I’m on the lookout for a new programming side project. I’m in the early stages of research for a new side project. It’s likely going to be a Chinese dictionary app for iOS.
@@ -17,7 +17,8 @@ Here’s what I’m currently working on (last updated Jul 09, 2020):
 
 I’m not a voracious reader, although I would like to become one. At any point in time I’m likely reading a book from [Alan Kay’s reading list](http://www.squeakland.org/resources/books/readingList.jsp), a technical book  and some fiction. I’m currently reading:
 
-- [Technics and Civilization](https://en.wikipedia.org/wiki/Technics_and_Civilization) by [Lewis Mumford](https://en.wikipedia.org/wiki/Lewis_Mumford)
+- "The Secret of Childhood" by Maria Montessori
+- "El obsceno pájaro"q de la noche by José Donoso
 - [Effective TypeScript](https://www.oreilly.com/library/view/effective-typescript/9781492053736/) by [Dan Vanderkam](https://www.danvk.org/)
 - [A Farewell to Arms](https://en.wikipedia.org/wiki/A_Farewell_to_Arms) by Ernest Hemingway
 
