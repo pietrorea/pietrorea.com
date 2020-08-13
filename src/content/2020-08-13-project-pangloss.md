@@ -7,7 +7,7 @@ layout: post
 status: draft
 ---
 
-**Note:** This page is under construction! The page is published but not linked from anywhere. I'm currently gathering feedback and making changes. **Pangloss** means “all languages” in Greek and is an overly optimistic character in Voltaire’s Candide. To be “Panglossian” means to be characterized or given to extreme optimism, especially in the face of hardship or adversity.
+**Note:** This page is under construction! The page is published but not linked from anywhere. I'm currently gathering feedback and making changes. **Pangloss** means “all languages” in Greek and is a character in Voltaire’s Candide. To be “Panglossian” means to be characterized or given to extreme optimism, especially in the face of hardship or adversity.
 
 
 As of 2015, there are 53 million Spanish speakers in the United States. This alone makes the United States the second largest concentration of Spanish speakers in the world, after Mexico. Of this number, the majority are immigrants or recent immigrants from other countries.
