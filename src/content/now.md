@@ -18,7 +18,7 @@ Here’s what I’m currently working on (last updated Aug 13, 2020):
 I’m not a voracious reader, although I would like to become one. At any point in time I’m likely reading a book from [Alan Kay’s reading list](http://www.squeakland.org/resources/books/readingList.jsp), a technical book  and some fiction. I’m currently reading:
 
 - "The Secret of Childhood" by Maria Montessori
-- "El obsceno pájaro"q de la noche by José Donoso
+- "El obsceno pájaro" de la noche by José Donoso
 - [Effective TypeScript](https://www.oreilly.com/library/view/effective-typescript/9781492053736/) by [Dan Vanderkam](https://www.danvk.org/)
 - [A Farewell to Arms](https://en.wikipedia.org/wiki/A_Farewell_to_Arms) by Ernest Hemingway
 
