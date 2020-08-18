@@ -4,7 +4,7 @@ path: /2020/08/18/coming-soon-publishing-to-the-app-store-book
 date: 2020-08-18
 author: Pietro Rea
 layout: post
-status: draft
+status: published
 ---
 
 I’m happy to announce that I’m working on a new book with the [raywenderlich.com](https://www.raywenderlich.com) team. I find it hard to believe that the last book I co-authored, [Core Data by Tutorials](https://www.amazon.com/Core-Data-Tutorials-Sixth-Persisting/dp/1950325040/), came out _six years ago_. I’ve felt the itch to work on a new book for a couple of years, specifically on the topic of app distribution, and I’m happy that it’s finally happening. 
