@@ -1,6 +1,5 @@
 import Typography from 'typography'
 
-
 const typography = Typography({
   baseFontSize: "16px",
   baseLineHeight: 1.75,
@@ -42,6 +41,10 @@ const typography = Typography({
       body: {
         backgroundColor: '#323232',
         color: 'rgba(255,255,255,0.85)'
+      },
+      blockquote: {
+        color: 'rgba(255,255,255,1)',
+        borderLeft: `${rhythm(3 / 16)} solid rgba(255,255,255,1)`,
       }
     },
     ['@media only screen and (max-width:480px)']: {
