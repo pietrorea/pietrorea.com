@@ -15,6 +15,7 @@ As of 2015, there are 53 million Spanish speakers in the United States. This alo
 Although the United States has no official language, the language of politics and business is English. The ability to get a job, to get an education and to interact with local authorities requires an adequate level of English proficiency. For millions of Spanish speakers in the United States, the ability to learn English well in all its modalities (writing, speaking, reading) is directly tied to economic advancement.
 
 At the same time, the advances in consumer technology of the past decade have not been properly deployed in service of language learners. If you consider platforms like Facebook and Twitter, they provide engaging, hyper-personalized experiences (based on a deep knowledge of users) largely through mobile devices. This kind of platform still needs to be built for English ESL and for second language acquisition in general.
+
 The motivation for this project centers around the intersection of language learning and economic opportunity but also understands that bilingualism in isolation is itself a public good. Access to another culture’s public discourse and art enriches private lives and advances cross cultural empathy and understanding.
 
 ## Project Pangloss  
