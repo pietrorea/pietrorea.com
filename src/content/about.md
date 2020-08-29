@@ -1,6 +1,6 @@
 ---
 title: "About"
-path: /about
+path: /about2
 date: 2020-08-28
 author: Pietro Rea
 layout: page
