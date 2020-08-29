@@ -37,8 +37,7 @@ Running the script in Terminal is fine but I wanted something that could hook in
 
 First, open Automator and select **Application**.
 
-<img src="/automator1.png" alt="Select Application in Automator" style="float:left"/>
-<br />
+<img src="/automator1.png" alt="Select Application in Automator" />
 
 This Automator app consists of two steps, **Run AppleScript** and **Display Notification**. Find them in the list of steps and drag them into the right pane. 
 
@@ -58,8 +57,7 @@ The **Display Notification** step is optional. I added it because I noticed that
 
 The final Automator App should look like this:
 
-<img src="/automator2.png" alt="Select Application in Automator" style="float:left"/>
-<br />
+<img src="/automator2.png" alt="Select Application in Automator" />
 
 Save your work. I named my app **Derived Data Exterminator** because I like the mental image of the Automator robot going up against my Derived Data directory.
 
@@ -67,25 +65,24 @@ As I mentioned before, you can save this app in iCloud if you want it to be avai
 
 Time to test it! For best results, I like to close Xcode first. Hit `Cmd + Space` to fire up Spotlight and start typing the name of your Automator app. As soon as you select it you’ll see a little gear in your menu bar. Once the script is done running you’ll see a notification.
 
-<img src="/automator3.png" alt="Notification" style="float:left"/>
-<br />
+<p align="center">
+  <img src="/automator3.png" alt="Notification" />
+</p>
 
 Running the Automator app is my preferred method of deleting Derived Data but I learned recently that you can also use Automator to inject a menu item into Xcode.
 
 Open Automator again but this time select **Quick Action** instead of Application.
 
-<img src="/automator4.png" alt="Select Quick Action in Automator" style="float:left"/>
+<img src="/automator4.png" alt="Select Quick Action in Automator" />
 <br />
 
 In the top section, change **Workflow receives** to **no input** and select your installation of Xcode in the drop down next to it. Next, drag the same **Run AppleScript** and **Display Notification** steps like before and fill them the same way. This is what the end result looks like:
 
-<img src="/automator5.png" alt="Notification" style="float:left"/>
-<br />
+<img src="/automator5.png" alt="Modify Quick Action" />
 
 Save your work. I named my Quick Action **Delete Derived Data (Automator)**. In Xcode, it will start showing as a menu item up under  **Xcode > Services**.
 
-<img src="/automator6.png" alt="Notification" style="float:left"/>
-<br />
+<img src="/automator6.png" alt="Run Quick Action" />
 
 ## A word of caution
 

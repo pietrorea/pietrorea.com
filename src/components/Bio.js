@@ -11,7 +11,7 @@ import { rhythm } from '../utils/typography'
 class Bio extends React.Component {
   render() {
     const contactLink = {
-      marginRight: '0.75em'
+      marginRight: '0.5em'
     };
     return (
       <div
