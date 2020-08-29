@@ -33,7 +33,7 @@ class Bio extends React.Component {
         />
         <div>
           <div>
-            Written by <strong>Pietro Rea</strong>, a software developer, team lead and author living in northern Virginia.
+            Written by <strong>Pietro Rea</strong>, a software developer and author living in northern Virginia.
           </div>
           <div style={{
             display: 'flex'
