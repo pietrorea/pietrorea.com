@@ -117,7 +117,7 @@ module.exports = {
         background_color: `#fff`,
         theme_color: `#fff`,
         display: `standalone`,
-        icon: `src/images/milhouse.png`
+        icon: `static/milhouse.png`
       },
     },
     `gatsby-plugin-offline`,
