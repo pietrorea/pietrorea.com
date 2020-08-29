@@ -30,7 +30,7 @@ class Bio extends React.Component {
         />
         <div>
           <div>
-            Written by <strong>Pietro Rea</strong>, a software engineer in Washington D.C.
+            Written by <strong>Pietro Rea</strong>, a software developer, team lead and author living in northern Virginia.
           </div>
             <a href="https://github.com/pietrorea" target="_blank">
               Github
@@ -43,6 +43,10 @@ class Bio extends React.Component {
             <a href="https://www.linkedin.com/in/pietrorea/" target="_blank">
               Linkedin
             </a>
+            {'  '}
+            <Link to="/about">
+              About
+            </Link>
             {'  '}
             <Link to="/now">
               Now
