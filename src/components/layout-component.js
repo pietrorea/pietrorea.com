@@ -30,7 +30,7 @@ class Layout extends React.Component {
             }}
             to={'/'}
           >
-            Pietro Rea's Blog
+            pietrorea's blog
           </Link>
         </h1>
       )
@@ -38,7 +38,6 @@ class Layout extends React.Component {
       header = (
         <h3
           style={{
-            fontFamily: 'Montserrat, sans-serif',
             marginTop: 0,
             marginBottom: rhythm(-1),
           }}
@@ -51,7 +50,7 @@ class Layout extends React.Component {
             }}
             to={'/'}
           >
-            Pietro Rea's Blog
+            pietrorea's blog
           </Link>
         </h3>
       )

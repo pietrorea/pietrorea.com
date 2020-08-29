@@ -10,6 +10,9 @@ import { rhythm } from '../utils/typography'
 
 class Bio extends React.Component {
   render() {
+    const contactLink = {
+      marginRight: '0.75em'
+    };
     return (
       <div
         style={{
@@ -32,25 +35,35 @@ class Bio extends React.Component {
           <div>
             Written by <strong>Pietro Rea</strong>, a software developer, team lead and author living in northern Virginia.
           </div>
-            <a href="https://github.com/pietrorea" target="_blank">
-              Github
-            </a>
-            {'  '}
-            <a href="https://twitter.com/pietrorea" target="_blank">
-            Twitter
-            </a>
-            {'  '}
-            <a href="https://www.linkedin.com/in/pietrorea/" target="_blank">
-              Linkedin
-            </a>
-            {'  '}
-            <Link to="/about">
-              About
-            </Link>
-            {'  '}
-            <Link to="/now">
-              Now
-            </Link>
+          <div style={{
+            display: 'flex'
+          }}>
+            <div style={contactLink}>
+              <a href="https://github.com/pietrorea" target="_blank">
+                Github
+              </a>
+            </div>
+            <div style={contactLink}>
+              <a href="https://twitter.com/pietrorea" target="_blank">
+              Twitter
+              </a>
+            </div>
+            <div style={contactLink}>
+              <a href="https://www.linkedin.com/in/pietrorea/" target="_blank">
+                LinkedIn
+              </a>
+            </div>
+            <div style={contactLink}>
+              <Link to="/about">
+                About
+              </Link>
+            </div>
+            <div style={contactLink}>
+              <Link to="/now">
+                Now
+              </Link>
+            </div>
+          </div>
         </div>
       </div>
     )
