@@ -14,12 +14,7 @@ class Layout extends React.Component {
     if (location.pathname === rootPath) {
       header = (
         <h1
-          style={{
-            fontSize: '3.95285rem',
-            lineHeight: '4.375rem',
-            marginBottom: '2.625rem',
-            marginTop: 0,
-          }}
+          className='siteTitle'
         >
           <Link
             style={{

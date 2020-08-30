@@ -35,7 +35,8 @@ class Bio extends React.Component {
             Written by Pietro Rea, a software developer, team lead and author living in northern Virginia.
           </div>
           <div style={{
-            display: 'flex'
+            display: 'flex',
+            flexWrap: 'wrap'
           }}>
             <div style={contactLink}>
               <a href="https://github.com/pietrorea" target="_blank">

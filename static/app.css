@@ -241,6 +241,13 @@ h1 {
   line-height: 1.1;
 }
 
+h1.siteTitle {
+  font-size: 3.95285rem;
+  line-height: 4.375rem;
+  margin-bottom: 2.625rem;
+  margin-top: 0
+}
+
 h2 {
   margin-left: 0;
   margin-right: 0;
@@ -674,6 +681,10 @@ ul, ol {
     margin-left: -1.3125rem;
     margin-right: 0;
     padding-left: 0.98438rem;
+  }
+  h1.siteTitle {
+    font-size: 3rem;
+    line-height: 1;
   }
 }
 
