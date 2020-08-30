@@ -11,14 +11,16 @@ const typography = Typography({
   headerWeight: 900,
   bodyWeight: 400,
   boldWeight: 700,
-  overrideStyles: ({ adjustFontSizeTo, scale, rhythm }, options) => ({
+  overrideStyles: ({ adjustFontSizeTo }, options) =>
+   ({
     blockquote: {
-      ...scale(1 / 5),
+      fontSize: '1.20112rem',
+      lineHeight: '1.75rem',
       color: 'hsla(0,0%,0%,0.59)',
       fontStyle: "italic",
-      paddingLeft: rhythm(13 / 16),
-      marginLeft: rhythm(-1),
-      borderLeft: `${rhythm(3 / 16)} solid hsla(0,0%,0%,0.9)`,
+      paddingLeft: '1.42188rem',
+      marginLeft: '-1.75rem',
+      borderLeft: '0.32813rem solid hsla(0,0%,0%,0.9)',
     },
     "blockquote > :last-child": {
       marginBottom: 0,
@@ -44,21 +46,21 @@ const typography = Typography({
       },
       blockquote: {
         color: 'rgba(255,255,255,1)',
-        borderLeft: `${rhythm(3 / 16)} solid rgba(255,255,255,1)`,
+        borderLeft: '0.32813rem solid rgba(255,255,255,1)',
       }
     },
     ['@media only screen and (max-width:480px)']: {
       "ul,ol": {
-        marginLeft: rhythm(1),
+        marginLeft: '1.75rem',
       },
       blockquote: {
-        marginLeft: rhythm(-3 / 4),
+        marginLeft: '-1.3125rem',
         marginRight: 0,
-        paddingLeft: rhythm(9 / 16),
+        paddingLeft: '0.98438rem',
       },
     },
     "h1,h2,h3,h4,h5,h6": {
-      marginTop: rhythm(2),
+      marginTop: '3.5rem',
     },
     h4: {
       letterSpacing: "0.140625em",
@@ -77,7 +79,7 @@ const typography = Typography({
     "mark,ins": {
       background: "#007acc",
       color: "white",
-      padding: `${rhythm(1 / 16)} ${rhythm(1 / 8)}`,
+      padding: '0.10938rem 0.21875rem',
       textDecoration: "none",
     },
   }),

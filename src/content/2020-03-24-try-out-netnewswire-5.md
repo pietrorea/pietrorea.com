@@ -15,11 +15,11 @@ It didn’t take me long to find [NetNewsWire][3], an RSS reader worthy of an Ap
 
 What struck me the most was the “philosophy” section featured on the app’s website.
 
-> We believe that apps should never crash. They should be free of bugs. They should be fast — they should feel lighter-than-air.
+> "We believe that apps should never crash. They should be free of bugs. They should be fast — they should feel lighter-than-air."
 
-> We believe that quality is more important than just piling on features; we believe that quality is the most important feature. And we believe that high quality is transformative — it makes for an app you never hesitate to reach for. You can rely on it, and you do, again and again.
+> "We believe that quality is more important than just piling on features; we believe that quality is the most important feature. And we believe that high quality is transformative — it makes for an app you never hesitate to reach for. You can rely on it, and you do, again and again."
 
-> This makes us slow to add features. We are adding features — but never at the expense of how it feels. Never at the expense of reliability and speed.
+> "This makes us slow to add features. We are adding features — but never at the expense of how it feels. Never at the expense of reliability and speed."
 
 “Never at the expense of how it feels.”
 

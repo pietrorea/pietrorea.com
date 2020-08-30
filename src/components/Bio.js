@@ -6,7 +6,6 @@ import 'typeface-merriweather'
 
 import profilePic from './profile-pic.jpg'
 import { Link } from 'gatsby'
-import { rhythm } from '../utils/typography'
 
 class Bio extends React.Component {
   render() {
@@ -17,23 +16,23 @@ class Bio extends React.Component {
       <div
         style={{
           display: 'flex',
-          marginBottom: rhythm(2.5),
+          marginBottom: '4.375rem',
         }}
       >
         <img
           src={profilePic}
           alt={`Pietro Rea`}
           style={{
-            marginRight: rhythm(1 / 2),
+            marginRight: '0.875rem',
             marginBottom: 0,
-            width: rhythm(2),
-            height: rhythm(2),
-            borderRadius: rhythm(1),
+            width: '3.5rem',
+            height: '3.5rem',
+            borderRadius: '1.75rem',
           }}
         />
         <div>
           <div>
-            Written by <strong>Pietro Rea</strong>, a software developer and author living in northern Virginia.
+            Written by Pietro Rea, a software developer, team lead and author living in northern Virginia.
           </div>
           <div style={{
             display: 'flex'

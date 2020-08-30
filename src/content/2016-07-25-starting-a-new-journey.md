@@ -25,7 +25,7 @@ Every company seems to be having trouble finding, hiring, and retaining mobile d
 
 Here’s a question people ask me all the time:
 
-> I am hiring a senior iOS engineer with 4-6 years of experience in New York City who can also implement a graph traversal algorithm on a whiteboard. Know anyone?
+> "I am hiring a senior iOS engineer with 4-6 years of experience in New York City who can also implement a graph traversal algorithm on a whiteboard. Know anyone?"
 
 Maybe not in those exact words, but that is really what they mean.
 

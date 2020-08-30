@@ -11,6 +11,6 @@ I just finished watching a WWDC talk titled [A Strategy of Great Work](http://as
 
 The last lesson is "you are never done". He ends with this quote from Steve Jobs:
 
-> If you do something and it turns out pretty good, then you should go do something else wonderful, not dwell on it too long. Just figure out what's next.
+> "If you do something and it turns out pretty good, then you should go do something else wonderful, not dwell on it too long. Just figure out what's next."
 
 You accomplished something. Great. What's next? How are you going to top yourself next time? It reminds me of Elizabeth Gilbert's [TED talk](http://www.ted.com/talks/elizabeth_gilbert_success_failure_and_the_drive_to_keep_creating#t-37182) about her drive to keep creating. Two different fields, same idea.

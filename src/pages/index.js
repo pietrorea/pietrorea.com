@@ -5,8 +5,6 @@ import Helmet from 'react-helmet'
 import Layout from '../components/layout-component'
 
 import Bio from '../components/Bio'
-import { rhythm } from '../utils/typography'
-
 class BlogIndex extends React.Component {
   render() {
     const { location } = this.props
@@ -25,7 +23,7 @@ class BlogIndex extends React.Component {
               <div key={node.fields.slug}>
                 <h3
                   style={{
-                    marginBottom: rhythm(1 / 4),
+                    marginBottom: '0.4375rem',
                   }}
                 >
                   <Link style={{ boxShadow: 'none' }} to={node.fields.slug}>

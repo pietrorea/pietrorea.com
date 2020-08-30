@@ -19,7 +19,7 @@ When you strike out on your own, the default state of the world is that you have
 
 If you don’t follow up on an invoice, you won’t get paid. The internet is down? Can’t yell at IT to fix it anymore. You have to get on your hands and knees and rewire your Ethernet connection.
 
-> Corporate accounts payable, Nina speaking. JUST a moment.” - Nina, Office Space
+> "Corporate accounts payable, Nina speaking. JUST a moment.” - Nina, Office Space
 
 As it turns out, Nina from Office Space had an important job. Nina and the rest of her colleagues (well, maybe not Milton) were providing crucial internal services to the organization so you could keep going to work every day.
 
