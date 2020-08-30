@@ -5,8 +5,6 @@ import get from 'lodash/get'
 
 import Bio from '../components/Bio'
 import Layout from '../components/layout-component'
-import { scale } from '../utils/typography'
-
 class BlogPostTemplate extends React.Component {
   render() {
     const post = this.props.data.markdownRemark

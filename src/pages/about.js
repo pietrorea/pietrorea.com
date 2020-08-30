@@ -2,6 +2,7 @@ import React from 'react'
 import Helmet from 'react-helmet'
 import Bio from '../components/Bio'
 import Layout from '../components/layout-component'
+import '../../static/app.css'
 
 const siteTitle = 'pietrorea\'s blog';
 

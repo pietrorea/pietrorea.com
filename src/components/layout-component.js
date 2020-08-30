@@ -1,6 +1,6 @@
 import React from 'react'
 import { Link } from 'gatsby'
-
+import '../../static/app.css'
 class Layout extends React.Component {
   render() {
     const { location, children } = this.props
