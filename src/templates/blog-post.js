@@ -16,18 +16,11 @@ class BlogPostTemplate extends React.Component {
         <div>
           <Helmet title={`${post.frontmatter.title} | ${siteTitle}`} />
           <h1>{post.frontmatter.title}</h1>
-          <p
-            style={{
-              fontSize: '0.83255rem',
-              lineHeight: '1.75rem',
-              display: 'block',
-              marginBottom: '1.75rem',
-              marginTop: '-1.75rem',
-            }}
+          <small
           >
             {post.frontmatter.date}
-          </p>
-          <div dangerouslySetInnerHTML={{ __html: post.html }} />
+          </small>
+          <div style={{ marginTop: '2.815rem' }} dangerouslySetInnerHTML={{ __html: post.html }} />
           <hr
             style={{
               marginBottom: '1.75rem',
