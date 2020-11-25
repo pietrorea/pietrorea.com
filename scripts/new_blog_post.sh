@@ -30,8 +30,7 @@ else
   echo "Creating ${file}"
 fi
 
-frontmatter="
----
+frontmatter="---
 title: ${blog_post_name}
 path: ${date_path}/${kebab_case_name} 
 date: ${date_dashes}
