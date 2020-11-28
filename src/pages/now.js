@@ -11,36 +11,28 @@ const NowPage = (props) => (
       <Helmet title={`Now | ${siteTitle}`} />
       <h1>Now</h1>
 
-        <p>Here’s what I’m currently working on (last updated Aug 13, 2020):</p>
+        <p>Here’s what I’m currently working on (last updated Nov 27, 2020):</p>
 
         <ul>
           <li>
-            As of this writing, I&#39;m one week into my new job at Capital One. After almost exactly three years at <a href="https://upside.com">Upside</a>, I joined Capital One&#39;s mobile engineering team to work on their iOS app. After a couple years doing full stack web development, this is a nice return to Swift and native mobile development. 
+            <p>I'm five months into my contract at Capital One. After almost exactly three years at Upside doing full-stack and mobile development, I joined Capital One&#39;s mobile engineering team as a full-time contractor.</p> 
+            <p>I'm happy that I'm getting the chance to go much deeper into accessibility, localization and test automation than ever before on top of the usual feature work I'm accustomed to. My team works on credit card rewards for the Capital One iOS app and (ironically) we'll soon be switching gears to work on travel and travel rewards features.</p>  
           </li>
           <li>
-            I’m on the lookout for a new programming side project. I’m in the early stages of research for a new side project. It’s likely going to be a Chinese dictionary app for iOS.
-          </li>
-          <li>
-            I’m getting back to playing the violin for my own enjoyment. The last song I learned how to play is <a href="https://www.musicnotes.com/sheetmusic/mtd.asp?ppn=MN0188250">Rains of Castamere</a> from GoT.
+            I'm four chapters into my new book, "Publishing to the App Store". This is a book that I've wanted to write for years and years. It's certainly tough having a full-time job, writing this book and being a husband and dad of two, but the pandemic has added a little bit of slack that I'm using for the book. The early access version is set to come out in the next few weeks and the whole thing should be done early next year. 
           </li>
         </ul>
 
         <h2>Books I’m reading</h2>
 
-        <p>I’m not a voracious reader, although I would like to become one. At any point in time I’m likely reading a book from <a href="http://www.squeakland.org/resources/books/readingList.jsp">Alan Kay’s reading list</a>, a technical book and some fiction. I’m currently reading:</p>
+        <p>At any point in time I’m likely reading a book from <a href="http://www.squeakland.org/resources/books/readingList.jsp">Alan Kay’s reading list</a>, a technical book and some fiction. I’m currently reading:</p>
 
         <ul>
           <li>
-            &quot;The Secret of Childhood&quot; by Maria Montessori
+            Nurtured by Love by Shinichi Suzuki
           </li>
           <li>
-            &quot;El obsceno pájaro de la noche&quot; by José Donoso
-          </li>
-          <li>
-            <a href="https://www.oreilly.com/library/view/effective-typescript/9781492053736/">Effective TypeScript</a> by <a href="https://www.danvk.org/">Dan Vanderkam</a>
-          </li>
-          <li>
-            <a href="https://en.wikipedia.org/wiki/A%5C_Farewell%5C_to%5C_Arms">A Farewell to Arms</a> by Ernest Hemingway
+            RxSwift: Reactive Programming with Swift by Scott Gardner, Florent Pillet and Marin Todorov
           </li>
         </ul>
 
