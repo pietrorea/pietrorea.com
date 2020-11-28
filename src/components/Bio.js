@@ -1,9 +1,5 @@
 import React from 'react'
 
-// Import typefaces
-import 'typeface-montserrat'
-import 'typeface-merriweather'
-
 import profilePic from './profile-pic.jpg'
 import { Link } from 'gatsby'
 
@@ -56,6 +52,11 @@ class Bio extends React.Component {
             <div style={contactLink}>
               <Link to="/about">
                 About
+              </Link>
+            </div>
+            <div style={contactLink}>
+              <Link to="/archive">
+                Archive
               </Link>
             </div>
             <div style={contactLink}>
