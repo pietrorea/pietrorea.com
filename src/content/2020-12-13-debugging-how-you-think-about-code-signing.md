@@ -35,7 +35,7 @@ So what is the App Sandbox? It's a system that enforces a strict separation betw
 
 As an iOS developer, I’d obviously heard of the sandbox before but I thought the sandbox was just about restricting access to the system-wide file system. This is actually not the case at all. The App Sandbox applies to [a lot more](https://developer.apple.com/library/archive/documentation/Security/Conceptual/AppSandboxDesignGuide/AboutAppSandbox/AboutAppSandbox.html): hardware, user files, user data (e.g. calendars, contacts, e-mail) and to all system integrations that could pose a security risk (the ability to send push notifications, integrate with the Health app, etc).
 
-So how does the App Sandbox relate to code signing and provisioning? A sandboxed app that wants to do something restricted must ask for permission from the OS and (sometimes) the user. **This permission-based system only makes sense if Apple can unambiguously and securely distinguish between apps**, which is what code signing and provisioning are meant to do. 
+So how does the App Sandbox relate to code signing and provisioning? A sandboxed app that wants to do something restricted must ask for permission from the OS and (sometimes) the user. **This permission-based system only makes sense if Apple can unambiguously and securely identify apps**, which is what code signing and provisioning are meant to do. 
 
 ## Tip #2: Work backwards
 
@@ -79,7 +79,7 @@ A provisioning profile contains different components. Changes to a component wil
 
 ## Tip #5: Understand where artifacts originate and how they propagate
 
-One of the primary sources of confusion for me was the fact that provisioning profiles are _everywhere_. You see them on the developer portal, inside a hidden folder on your Mac, in Xcode and embedded in the app's binary. This it disconcerting for a beginner. Is it all the same document? Where does it originate? Where does it go first and where does it go next? It’s a similar story for certificates and entitlements. 
+One of the primary sources of confusion for me was the fact that provisioning profiles are _everywhere_. You see them on the developer portal, inside a hidden folder on your Mac, in Xcode and embedded in the app's binary. This is disconcerting for a beginner. Is it all the same document? Where does it originate? Where does it go first and where does it go next? It’s a similar story for certificates and entitlements. 
 
 Along the way, Apple tried to be helpful by adding automatic code signing features to Xcode. Letting Xcode take care of code signing and provisioning is great if your use case is simple. But if you have to roll up your sleeves and manage code signing manually, I've found the automatic features to make everything more confusing because now there’s no single source of truth (which used to be the developer portal) and there are more places where you see the same artifacts.
 
@@ -88,10 +88,10 @@ You should aim to be clear about where certificates, entitlements and provisioni
 - **Certificates** originate as certificate signing requests that you give Apple to sign. Xcode can do this on your behalf. The certificate, which contains your public key, goes on an amazing journey as part of the provisioning profile (see below) while the private key lives a secret life in Keychain Access.
 - **Entitlements** get tacked onto an App ID in the developer portal. Xcode can also do this for you from the Capabilities menu. Entitlements also go on an amazing journey as part of the provisioning profile (see below). 
 
-Entitlements are especially tricky because there are multiple layers of defaults and overrides. Check out [the diagram in this technical note](https://developer.apple.com/library/archive/technotes/tn2415/_index.html#//apple_ref/doc/uid/DTS40016427-CH1-TP-ENTITLEMENTS_OVERVIEW_DIAGRAM) to see how entitlements resolve to values after considering all the different layers.
+  Entitlements are especially tricky because there are multiple layers of defaults and overrides. Check out [the diagram in this technical note](https://developer.apple.com/library/archive/technotes/tn2415/_index.html#//apple_ref/doc/uid/DTS40016427-CH1-TP-ENTITLEMENTS_OVERVIEW_DIAGRAM) to see how entitlements resolve to values after considering all the different layers.
 - **Provisioning profiles** also originate in the developer portal. Xcode can also generate them when automatic code signing is turned on. Once you get a provisioning profile on your machine, it lives in the aforementioned `~/Library/MobileDevice/Provisioning Profiles` folder on your Mac. At build time, Xcode embeds the provisioning profile in the app's binary. 
 
-This means that anyone who downloads your app also gets a copy of your provisioning profile! Finally, the information in the provisioning profile gets copied into the digital signature during code signing.
+  This means that anyone who downloads your app also gets a copy of your provisioning profile! Finally, the information in the provisioning profile gets copied into the digital signature during code signing.
 
 ## Some parting thoughts
 
