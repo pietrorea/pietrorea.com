@@ -7,7 +7,7 @@ layout: post
 status: published
 ---
 
-I’ve spent the last 2 weeks researching and writing about code signing and provisioning for my upcoming book [“iOS Distribution & Best Practices”](/2020/08/18/coming-soon-publishing-to-the-app-store-book).
+I’ve spent the last 2 weeks researching and writing about code signing and provisioning for my upcoming book [“iOS App Distribution & Best Practices”](/2020/08/18/coming-soon-publishing-to-the-app-store-book).
 
 During my research there were a number of things I found surprising. This post documents my personal gotchas in the hopes it helps someone. I also offer five specific tips on how you can fix any faulty thinking you might have about these two topics.
 

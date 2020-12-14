@@ -35,7 +35,7 @@ const AboutPage = (props) => (
         <h2>Things I&#39;ve written </h2>
 
         <ul>
-          <li><a href="/2020/08/18/coming-soon-publishing-to-the-app-store-book">Publishing to the App Store</a></li>
+          <li><a href="/2020/08/18/coming-soon-publishing-to-the-app-store-book">iOS App Distribution & Best Practices</a></li>
           <li><a href="https://www.amazon.com/Core-Data-Tutorials-Sixth-Persisting/dp/1950325040/">Core Data by Tutorials, 1st through 8th editions</a></li>
           <li><a href="https://www.amazon.com/iOS-Tutorials-Learning-APIs-Swift/dp/1942878117/">iOS 9 by Tutorials</a></li>
           <li><a href="https://www.amazon.com/iOS-7-Tutorials-Christine-Abernathy/dp/0989675106">iOS 7 by Tutorials</a></li>

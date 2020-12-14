@@ -19,7 +19,7 @@ const NowPage = (props) => (
             <p>I'm happy that I'm getting the chance to go much deeper into accessibility, localization and test automation than ever before on top of the usual feature work I'm accustomed to. My team works on credit card rewards for the Capital One iOS app and (ironically) we'll soon be switching gears to work on travel and travel rewards features.</p>  
           </li>
           <li>
-            I'm four chapters into my new book, "Publishing to the App Store". This is a book that I've wanted to write for years and years. It's certainly tough having a full-time job, writing this book and being a husband and dad of two, but the pandemic has added a little bit of slack that I'm using for the book. The early access version is set to come out in the next few weeks and the whole thing should be done early next year. 
+            I'm four chapters into my new book, "iOS App Distribution & Best Practices". This is a book that I've wanted to write for years and years. qIt's certainly tough having a full-time job, writing this book and being a husband and dad of two, but the pandemic has added a little bit of slack that I'm using for the book. The early access version is set to come out in the next few weeks and the whole thing should be done early next year. 
           </li>
         </ul>
 
