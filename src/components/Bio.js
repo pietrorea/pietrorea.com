@@ -59,11 +59,6 @@ class Bio extends React.Component {
                 Archive
               </Link>
             </div>
-            <div style={contactLink}>
-              <Link to="/now">
-                Now
-              </Link>
-            </div>
           </div>
         </div>
       </div>

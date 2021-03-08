@@ -11,6 +11,8 @@ const NowPage = (props) => (
       <Helmet title={`Now | ${siteTitle}`} />
       <h1>Now</h1>
 
+        <p><strong>This page is not being maintained anymore. It's out of date!</strong></p>
+
         <p>Here’s what I’m currently working on (last updated Nov 27, 2020):</p>
 
         <ul>
