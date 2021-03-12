@@ -1,6 +1,6 @@
 # pietrorea.com
 
-This is the source code and content for [https://www.pietrorea.com](https://www.pietrorea). The site is currently powered by [Gatsby.js](https://github.com/gatsbyjs/) and hosted on Netlify. The current Gatsby theme is a derivative of the [gatsby-starter-blog](https://github.com/gatsbyjs/gatsby-starter-blog) template. Gatsby is great if you want to learn about React and GraphQL.
+This repo contains the source code and content for [https://www.pietrorea.com](https://www.pietrorea). The site is currently powered by [Gatsby.js](https://github.com/gatsbyjs/) and hosted on Netlify. The current Gatsby theme is a derivative of the [gatsby-starter-blog](https://github.com/gatsbyjs/gatsby-starter-blog) template. Gatsby is great if you want to learn about React and GraphQL.
 
 # Set up
 
@@ -10,7 +10,7 @@ This is the source code and content for [https://www.pietrorea.com](https://www.
 
 # Content
 
-The blog posts and pages are written in Markdown and they are located in the `/src/content` directory.
+The blog posts and pages are written in Markdown and they're located in the `/src/content` directory.
 
 The posts use Jekyll-inspired [frontmatter](https://jekyllrb.com/docs/frontmatter/) to communicate metadata back to the blogging engine. The frontmatter variables currently supported are listed below:
 
