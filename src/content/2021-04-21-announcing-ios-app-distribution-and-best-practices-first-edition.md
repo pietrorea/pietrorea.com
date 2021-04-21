@@ -7,7 +7,7 @@ layout: post
 status: published
 ---
 
-I'm excited to announce the release my new book, [**iOS App Distribution & Best Practices**](https://www.raywenderlich.com/books/ios-app-distribution-best-practices/v1.0)! You can read it online if you have a [raywenderlich.com](https://raywenderlich.com) subscription. If you like to read books on paper, you can get the print version from Amazon once it's available.
+I'm excited to announce the release my new book, [**iOS App Distribution & Best Practices**](https://www.raywenderlich.com/books/ios-app-distribution-best-practices/v1.0)! You can read it online if you have a [raywenderlich.com](https://raywenderlich.com) subscription. If you like to read books on paper, you can buy the print version from Amazon in a few weeks.
 
 <img src="/pasi-cover.png" alt="iOS App Distribution & Best Practices book cover"/>
 
@@ -19,11 +19,11 @@ Most resources for learning iOS focus on the tools and frameworks for _making_ t
 
 This state of affairs would be fine if app distribution were straightforward. Unfortunately, the opposite is true. App distribution is often **one of the most complex and downright frustrating** parts about shipping an iOS app. Developers can literally waste days just on figuring out how to upload a build the App Store 🤯. 
 
-Once you feel comfortable with the basics of app distribution, the book moves on to automation. Every team works differently, but iOS is now mature enough that there's some definite **convergence** of best practices when it comes to iOS automation. Here, too, I believe the book fills a need. There are tons written about CI/CD/devops in the web development world, but relatively little about iOS. 
+Once you feel comfortable with the basics of app distribution, the book moves on to automation. Every team works differently, but iOS is now mature enough that there's some definite **convergence** of best practices when it comes to iOS automation. Here, too, I believe the book fills a need. There are tons written about CI/CD/devops in the web development world, but relatively little on iOS. 
 
 ## Who is this book for?
 
-People with wildly different backgrounds routinely handle app distribution. We kept this in mind while writing the book. Some chapters are more geared to developers, but you're involved in any way in shipping an app to the App Store, we think you can benefit from the book.
+People with wildly different backgrounds routinely handle app distribution. We kept this in mind while writing the book. Some chapters are more geared to developers, but if you're involved in any way in shipping an app to the App Store, we think you can benefit from the book.
 
 When it comes to developers, these three type of developers would benefit the most:
 
