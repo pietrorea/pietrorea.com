@@ -128,7 +128,6 @@ module.exports = {
         siteUrl: `https://pietrorea.com`,
         stripQueryString: true,
       }
-    },
-    `gatsby-plugin-preload-fonts`
+    }
   ],
 }
