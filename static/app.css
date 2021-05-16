@@ -668,22 +668,6 @@ mark, ins {
   text-decoration: none;
 }
 
-@media (prefers-color-scheme: dark) {
-  body {
-    background-color: #323232;
-    background-image: none;
-    color: rgba(255, 255, 255, 0.85);
-  }
-  blockquote {
-    color: rgba(255, 255, 255, 1);
-    border-left: 0.32813rem solid rgba(255, 255, 255, 1);
-  }
-
-  h1 a {
-    color: #007acc;
-  } 
-}
-
 @media only screen and (max-width:480px) {
   ul, ol {
     margin-left: 1.75rem;

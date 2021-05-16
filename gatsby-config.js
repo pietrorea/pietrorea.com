@@ -3,7 +3,7 @@ module.exports = {
     title: 'pietrorea\'s blog',
     author: 'Pietro Rea',
     description: 'My place on the \'net.',
-    siteUrl: 'https://www.pietrorea.com/',
+    siteUrl: 'https://pietrorea.com/',
   },
   plugins: [
     {
