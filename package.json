@@ -2,7 +2,11 @@
   "name": "pietrorea.com",
   "description": "Static site powering pietrorea.com",
   "version": "1.0.0",
+  "private": true,
   "author": "Pietro Rea <pietro@sweetpeamobile.com>",
+  "engines": {
+    "node": ">=14"
+  },
   "bugs": {
     "url": "https://github.com/pietrorea/pietrorea.com/issues"
   },
@@ -38,12 +42,12 @@
     "babel-preset-gatsby": "^0.1.6",
     "eslint": "^4.19.1",
     "eslint-plugin-react": "^7.7.0",
-    "gh-pages": "^1.1.0",
-    "prettier": "^1.12.0"
+    "gh-pages": "^1.1.0"
   },
-  "homepage": "https://github.com/gatsbyjs/gatsby-starter-blog#readme",
+  "homepage": "https://github.com/pietrorea/pietrorea.com/",
   "keywords": [
-    "gatsby"
+    "pietrorea.com",
+    "blog"
   ],
   "license": "MIT",
   "main": "n/a",
@@ -55,7 +59,6 @@
     "dev": "gatsby develop",
     "clean": "gatsby clean",
     "fix-semi": "eslint --quiet --ignore-pattern node_modules --ignore-pattern public --parser babel-eslint --no-eslintrc --rule '{\"semi\": [2, \"never\"], \"no-extra-semi\": [2]}' --fix gatsby-node.js",
-    "format": "prettier --trailing-comma es5 --no-semi --single-quote --write 'src/**/*.js' 'src/**/*.md'",
     "lint": "./node_modules/.bin/eslint --ext .js,.jsx --ignore-pattern public .",
     "prod": "gatsby build && gatsby serve",
     "test": "echo \"Error: no test specified\" && exit 1"
