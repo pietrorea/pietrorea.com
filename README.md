@@ -1,10 +1,10 @@
 # pietrorea.com
 
-This repo contains the source code and content for [https://www.pietrorea.com](https://www.pietrorea). The site uses the static site generator [Gatsby.js](https://github.com/gatsbyjs/) and hosted on Netlify. The current Gatsby theme is a derivative of the [gatsby-starter-blog](https://github.com/gatsbyjs/gatsby-starter-blog) template.
+This repo contains the source code and content for [https://www.pietrorea.com](https://www.pietrorea). The site uses the static site generator [Gatsby.js](https://github.com/gatsbyjs/) and it is hosted on Netlify. The current theme is a derivative of the [gatsby-starter-blog](https://github.com/gatsbyjs/gatsby-starter-blog) template.
 
 # Set up
 
-- Prerequisites: make sure `node`, `npm`, `nvm` are installed. Then install node 10 using nvm.
+- Prerequisites: make sure `node`, `npm`, `nvm` are installed.
 - Clone [this repo](https://github.com/pietrorea/pietrorea.com) and run `npm i`. Install peer dependencies.
 - Run `npm run dev` to run locally.
 
