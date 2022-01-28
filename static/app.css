@@ -13,7 +13,7 @@ body {
   font-family: -apple-system, BlinkMacSystemFont, "SF Hello", "Helvetica Neue", Helvetica, Arial, Verdana, sans-serif;
   font-feature-settings: "kern", "liga", "clig", "calt";
   font-kerning: normal;
-  font-size: 18px;
+  font-size: 1.125rem;
   font-weight: 300;
   line-height: 1.5;
   margin: 0;
@@ -104,11 +104,11 @@ svg:not(:root) {
 
 code, kbd, pre, samp {
   font-family: monospace, monospace;
-  font-size: 1em
+  font-size: 0.5rem
 }
 
 figure {
-  margin: 1em 40px
+  margin: 1em 40px;
 }
 
 hr {
