@@ -13,7 +13,7 @@ Choosing to actively manage your infrastructure is part of a much larger discuss
 
 There's the axis of [new vs. old tech](https://mcfunley.com/choose-boring-technology) and also of build vs. buy. Finally, there's the decision to use **managed vs. unmanaged services**. This last one is the topic of this blog post. 
 
-At one end of the spectrum, you can manage everything like its 1999. You set up your own host, install and manage dependencies, set up backups, etc. As you move towards the fully-managed end of the spectrum, you start to see lightly-managed compute primitives like Amazon RDS all the way to full-service, cloud-enabled app frameworks like AWS Amplify or Google App Engine, and BaaS/PaaS providers like Heroku.
+At one end of the spectrum, you can manage everything like it's 1999. You set up your own host, install and manage dependencies, set up backups, etc. As you move towards the fully-managed end of the spectrum, you start to see lightly-managed compute primitives like Amazon RDS all the way to full-service, cloud-enabled app frameworks like AWS Amplify or Google App Engine, and BaaS/PaaS providers like Heroku.
 
 The default position at most places I come across is to go as managed as you can tolerate, usually to save on engineering effort. But how did we manage to ship anything just 10 years ago, when most of these options weren't available? 
 
