@@ -22,7 +22,7 @@ const AboutPage = (props) => (
 
         <h2>What I&#39;ve done before</h2>
 
-        <p>I&#39;ve held a number of engineering positions across many industries including travel, e-commerce an media. Right now, I'm a software engineering consultant to early stage startups at <b>Sweetpea Mobile</b>, a consultancy I started.</p> 
+        <p>I&#39;ve held a number of engineering positions across many industries including travel, e-commerce and media. Right now, I'm a software engineering consultant to early stage startups at <b>Sweetpea Mobile</b>, a consultancy I started.</p>
 
         <p>Previously, I was part of Capital One's mobile engineering team, where I helped build digital tools for Capital One's credit card customers. Before that, I was a team lead at <a href="https://upside.com">Upside Business Travel</a>, where I led teams of software engineers to build and maintain Upside's profile and authentication systems, Upside's corporate offering and the iOS and Android apps. </p>
 
