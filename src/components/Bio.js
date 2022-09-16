@@ -1,6 +1,6 @@
 import React from 'react'
 
-import profilePic from './profile-pic.jpg'
+import profilePic from './headshot.jpeg'
 import { Link } from 'gatsby'
 
 class Bio extends React.Component {
@@ -28,7 +28,7 @@ class Bio extends React.Component {
         />
         <div>
           <div>
-            Written by Pietro Rea, a software developer, team lead and author living in northern Virginia.
+            Written by Pietro Rea, a software engineer, engineering manager and author from northern Virginia.
           </div>
           <div style={{
             display: 'flex',
