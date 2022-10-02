@@ -49,7 +49,7 @@
   "main": "n/a",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/gatsbyjs/gatsby-starter-blog.git"
+    "url": "https://github.com/pietrorea/pietrorea.com.git"
   },
   "scripts": {
     "dev": "gatsby develop",
