@@ -5,7 +5,7 @@
   "private": true,
   "author": "Pietro Rea <pietro@sweetpeamobile.com>",
   "engines": {
-    "node": ">=14"
+    "node": ">=16"
   },
   "bugs": {
     "url": "https://github.com/pietrorea/pietrorea.com/issues"
