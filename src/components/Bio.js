@@ -46,8 +46,11 @@ class Bio extends React.Component {
               </a>
             </div>
             <div style={contactLink}>
-              <a href="https://twitter.com/pietrorea" target="_blank">
-                Twitter
+              <a
+                rel="me"
+                href="https://mastodon.replacementhipster.com/@pietro"
+              >
+                Mastodon
               </a>
             </div>
             <div style={contactLink}>
