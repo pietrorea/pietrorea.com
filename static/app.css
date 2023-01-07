@@ -534,10 +534,12 @@ li {
 }
 
 ol li {
+  margin-left: 2rem;
   padding-left: 0;
 }
 
 ul li {
+  margin-left: 2rem;
   padding-left: 0;
 }
 
