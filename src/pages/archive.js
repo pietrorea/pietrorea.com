@@ -1,19 +1,19 @@
-import React from 'react'
-import { graphql } from 'gatsby'
-import get from 'lodash/get'
-import Helmet from 'react-helmet'
-import Layout from '../components/layout-component'
-import ArchiveYear from '../components/ArchiveYear'
-import Bio from '../components/Bio'
+import React from "react";
+import { graphql } from "gatsby";
+import get from "lodash/get";
+import Helmet from "react-helmet";
+import Layout from "../components/layout-component";
+import ArchiveYear from "../components/ArchiveYear";
+import Bio from "../components/Bio";
 
 class ArchivePage extends React.Component {
   render() {
-    const { location } = this.props
-    const siteTitle = get(this, 'props.data.site.siteMetadata.title')
-    const posts = get(this, 'props.data.allMarkdownRemark.edges')
+    const { location } = this.props;
+    const siteTitle = get(this, "props.data.site.siteMetadata.title");
+    const posts = get(this, "props.data.allMarkdownRemark.edges");
 
     let yearToPosts = {};
-    posts.map(( { node }) => {
+    posts.map(({ node }) => {
       let datePublished = node.frontmatter.date;
       let year = new Date(datePublished).getFullYear();
       if (yearToPosts[year]) {
@@ -25,33 +25,34 @@ class ArchivePage extends React.Component {
     });
 
     const years = Object.keys(yearToPosts).sort().reverse();
-    
+
     return (
       <Layout location={location}>
         <div>
           <Helmet title={siteTitle} />
           {years.map((year) => {
             return (
-              <ArchiveYear 
-                key={year} 
-                year={year} 
-                blogPosts={yearToPosts[year]}/>
-            )
+              <ArchiveYear
+                key={year}
+                year={year}
+                blogPosts={yearToPosts[year]}
+              />
+            );
           })}
         </div>
         <hr
           style={{
-            marginTop: '1.75rem',
-            marginBottom: '1.75rem',
+            marginTop: "1.75rem",
+            marginBottom: "1.75rem",
           }}
         />
         <Bio />
       </Layout>
-    )
+    );
   }
 }
 
-export default ArchivePage
+export default ArchivePage;
 
 export const pageQuery = graphql`
   query ArchiveQuery {
@@ -61,16 +62,9 @@ export const pageQuery = graphql`
       }
     }
     allMarkdownRemark(
-      sort: { fields: [frontmatter___date], order: DESC },
-      filter: { 
-        frontmatter: { 
-          layout: { 
-            eq: "post"
-          },
-          status: {
-            eq: "published"
-          }
-        }
+      sort: { frontmatter: { date: DESC } }
+      filter: {
+        frontmatter: { layout: { eq: "post" }, status: { eq: "published" } }
       }
     ) {
       edges {
@@ -86,4 +80,4 @@ export const pageQuery = graphql`
       }
     }
   }
-`
+`;
