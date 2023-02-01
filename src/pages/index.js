@@ -10,30 +10,29 @@ class BlogIndex extends React.Component {
     const { location } = this.props;
 
     const siteTitle = get(this, "props.data.site.siteMetadata.title");
-    const posts = get(this, "props.data.allMarkdownRemark.edges");
+    const posts = get(this, "props.data.allWpPost.nodes");
 
     return (
       <Layout location={location}>
         <div>
           <Helmet title={siteTitle} />
           <Bio />
-          {posts.map(({ node }) => {
-            const title = get(node, "frontmatter.title") || node.fields.slug;
+          {posts.map((post) => {
             return (
-              <div key={node.fields.slug}>
+              <div key={post.slug}>
                 <h1
                   style={{
                     marginBottom: "1.5rem",
                   }}
                 >
-                  <Link style={{ boxShadow: "none" }} to={node.fields.slug}>
-                    {title}
+                  <Link style={{ boxShadow: "none" }} to={`${post.slugDate}${post.slug}`}>
+                    {post.title}
                   </Link>
                 </h1>
-                <small>{node.frontmatter.date}</small>
+                <small>{post.postDate}</small>
                 <p
                   style={{ marginTop: "2.815rem", marginBottom: "4rem" }}
-                  dangerouslySetInnerHTML={{ __html: node.excerpt }}
+                  dangerouslySetInnerHTML={{ __html: post.excerpt }}
                 />
               </div>
             );
@@ -53,23 +52,14 @@ export const pageQuery = graphql`
         title
       }
     }
-    allMarkdownRemark(
-      sort: { frontmatter: { date: DESC } }
-      filter: {
-        frontmatter: { layout: { eq: "post" }, status: { eq: "published" } }
-      }
-    ) {
-      edges {
-        node {
-          excerpt(pruneLength: 280)
-          fields {
-            slug
-          }
-          frontmatter {
-            date(formatString: "DD MMMM, YYYY")
-            title
-          }
-        }
+    allWpPost(sort: { date: DESC }) {
+      nodes {
+        id
+        slug
+        slugDate: date(formatString: "/YYYY/MM/DD/")
+        postDate: date(formatString: "DD MMMM, YYYY")
+        excerpt
+        title
       }
     }
   }

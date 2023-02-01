@@ -11,21 +11,12 @@ exports.createPages = ({ graphql, actions }) => {
       graphql(
         `
           {
-            allMarkdownRemark(
-              sort: { frontmatter: { date: DESC } }
-              limit: 1000
-            ) {
-              edges {
-                node {
-                  fields {
-                    slug
-                  }
-                  frontmatter {
-                    title
-                    status
-                    layout
-                  }
-                }
+            allWpPost(sort: { date: DESC }) {
+              nodes {
+                id
+                slug
+                date(formatString: "/YYYY/MM/DD/")
+                title
               }
             }
           }
@@ -37,46 +28,17 @@ exports.createPages = ({ graphql, actions }) => {
         }
 
         // Create blog posts pages.
-        const posts = result.data.allMarkdownRemark.edges;
-
+        const posts = result.data.allWpPost.nodes;
         _.each(posts, (post, index) => {
-          const previous =
-            index === posts.length - 1 ? null : posts[index + 1].node;
-          const next = index === 0 ? null : posts[index - 1].node;
-
           createPage({
-            path: post.node.fields.slug,
+            path: `${post.date}${post.slug}`,
             component: blogPost,
             context: {
-              slug: post.node.fields.slug,
-              previous,
-              next,
+              slug: `${post.slug}`
             },
           });
         });
       })
     );
   });
-};
-
-exports.onCreateNode = ({ node, actions, getNode }) => {
-  const { createNodeField } = actions;
-
-  if (node.internal.type === `MarkdownRemark`) {
-    const value = createFilePath({ node, getNode });
-    createNodeField({
-      name: `slug`,
-      node,
-      value,
-    });
-  }
-};
-
-exports.onCreateNode = ({ node, actions }) => {
-  const { createNodeField } = actions;
-
-  if (node.internal.type === `MarkdownRemark`) {
-    const slug = `${node.frontmatter.path}`;
-    createNodeField({ node, name: `slug`, value: slug });
-  }
 };

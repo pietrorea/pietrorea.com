@@ -1,5 +1,7 @@
 #!/bin/bash
 
+# Note: This script is not used anymore. Adding new blog post is handled by headless Wordpress.
+
 echo "Enter blog post name:"
 read blog_post_name
 
