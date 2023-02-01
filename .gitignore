@@ -6,6 +6,9 @@ public
 .cache/
 yarn.lock
 
+## Environment variables
+.env*
+
 # Logs
 logs
 *.log

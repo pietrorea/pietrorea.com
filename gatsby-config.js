@@ -1,38 +1,27 @@
+require("dotenv").config({
+    path: `.env.${process.env.NODE_ENV}`,
+});
+
 module.exports = {
   siteMetadata: {
-    title: 'pietrorea\'s blog',
-    author: 'Pietro Rea',
-    description: 'My place on the \'net.',
-    siteUrl: 'https://pietrorea.com/',
+    title: "pietrorea's blog",
+    author: "Pietro Rea",
+    description: "My place on the 'net.",
+    siteUrl: "https://pietrorea.com/",
   },
   plugins: [
+    {
+      resolve: "gatsby-source-wordpress",
+      options: {
+        url: `${process.env.WPGRAPHQL_URL}`,
+      },
+    },
     {
       resolve: `gatsby-plugin-google-analytics`,
       options: {
         trackingId: "UA-85442279-5",
         head: true,
         anonymize: true,
-      }
-    },
-    {
-      resolve: `gatsby-source-filesystem`,
-      options: {
-        path: `${__dirname}/src/content`,
-        name: 'pages',
-      },
-    },
-    {
-      resolve: `gatsby-transformer-remark`,
-      options: {
-        plugins: [
-          {
-            resolve: `gatsby-remark-prismjs`,
-            options: {
-              aliases:{sh: "bash", js:"javascript"},
-              showLineNumbers: true,
-            }
-          }
-        ],
       },
     },
     {
@@ -52,48 +41,34 @@ module.exports = {
         `,
         feeds: [
           {
-            serialize: ({ query: { site, allMarkdownRemark } }) => {
-              return allMarkdownRemark.edges.map(edge => {
-                return Object.assign({}, edge.node.frontmatter, {
-                  description: edge.node.excerpt,
-                  date: edge.node.frontmatter.date,
-                  url: `${site.siteMetadata.siteUrl} + ${edge.node.fields.slug}?utm_source=rss&utm_medium=rss`,
-                  guid: site.siteMetadata.siteUrl + edge.node.fields.slug,
-                  custom_elements: [{ "content:encoded": edge.node.html }],
-                })
-              })
+            serialize: ({ query: { site, allWpPost } }) => {
+              return allWpPost.nodes.map((node) => {
+                return Object.assign({}, {
+                  description: node.excerpt,
+                  date: node.date,
+                  url: `${site.siteMetadata.siteUrl}${node.slugDate}${node.slug}?utm_source=rss&utm_medium=rss`,
+                  guid: site.siteMetadata.siteUrl + node.slugDate + node.slug,
+                  custom_elements: [{ "content:encoded": node.content }],
+                });
+              });
             },
             query: `
               {
-                allMarkdownRemark(
-                  filter: {
-                    frontmatter: {
-                      layout: {
-                        eq: "post"
-                      },
-                      status: {
-                        eq: "published"
-                      }
-                    }
-                  }
-                  sort: { order: DESC, fields: [frontmatter___date] },
-                ) {
-                  edges {
-                    node {
-                      excerpt
-                      html
-                      fields { slug }
-                      frontmatter {
-                        title
-                        date
-                      }
-                    }
+                allWpPost(sort: { date: DESC }) {
+                  nodes {
+                    id
+                    title
+                    slug
+                    slugDate: date(formatString: "/YYYY/MM/DD/")
+                    date(formatString: "YYYY-MM-DD")
+                    excerpt
+                    content                    
                   }
                 }
               }
             `,
             output: "/rss.xml",
-            title: "Pietro Rea"
+            title: "Pietro Rea",
           },
         ],
       },
@@ -107,7 +82,7 @@ module.exports = {
         background_color: `#fff`,
         theme_color: `#fff`,
         display: `standalone`,
-        icon: `static/milhouse.png`
+        icon: `static/milhouse.png`,
       },
     },
     `gatsby-plugin-offline`,
@@ -117,7 +92,7 @@ module.exports = {
       options: {
         siteUrl: `https://pietrorea.com`,
         stripQueryString: true,
-      }
-    }
+      },
+    },
   ],
-}
+};

@@ -10,17 +10,17 @@ class ArchivePage extends React.Component {
   render() {
     const { location } = this.props;
     const siteTitle = get(this, "props.data.site.siteMetadata.title");
-    const posts = get(this, "props.data.allMarkdownRemark.edges");
+    const posts = get(this, "props.data.allWpPost.nodes");
 
     let yearToPosts = {};
-    posts.map(({ node }) => {
-      let datePublished = node.frontmatter.date;
+    posts.map((post) => {
+      let datePublished = post.date;
       let year = new Date(datePublished).getFullYear();
       if (yearToPosts[year]) {
-        yearToPosts[year].push(node);
+        yearToPosts[year].push(post);
       } else {
         yearToPosts[year] = new Array();
-        yearToPosts[year].push(node);
+        yearToPosts[year].push(post);
       }
     });
 
@@ -61,23 +61,14 @@ export const pageQuery = graphql`
         title
       }
     }
-    allMarkdownRemark(
-      sort: { frontmatter: { date: DESC } }
-      filter: {
-        frontmatter: { layout: { eq: "post" }, status: { eq: "published" } }
-      }
-    ) {
-      edges {
-        node {
-          fields {
-            slug
-          }
-          frontmatter {
-            date
-            title
-          }
+    allWpPost(sort: { date: DESC }) {
+        nodes {
+          id
+          slug
+          slugDate: date(formatString: "/YYYY/MM/DD/")
+          date(formatString: "YYYY-MM-DD")
+          title
         }
-      }
     }
   }
 `;
