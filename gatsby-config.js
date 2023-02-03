@@ -44,6 +44,7 @@ module.exports = {
             serialize: ({ query: { site, allWpPost } }) => {
               return allWpPost.nodes.map((node) => {
                 return Object.assign({}, {
+                  title: node.title,
                   description: node.excerpt,
                   date: node.date,
                   url: `${site.siteMetadata.siteUrl}${node.slugDate}${node.slug}?utm_source=rss&utm_medium=rss`,
