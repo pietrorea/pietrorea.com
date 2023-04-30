@@ -1,66 +1,65 @@
 import React from "react";
 import { Link } from "gatsby";
 import "../../static/app.css";
-class Layout extends React.Component {
-  render() {
-    const { location, children } = this.props;
-    let header;
 
-    let rootPath = `/`;
-    if (typeof __PREFIX_PATHS__ !== `undefined` && __PREFIX_PATHS__) {
-      rootPath = __PATH_PREFIX__ + `/`;
-    }
+const Layout = (props) => {
+  const { location, children } = props;
+  let header;
 
-    if (location.pathname === rootPath) {
-      header = (
-        <h1 className="siteTitle">
-          <Link
-            style={{
-              boxShadow: "none",
-              textDecoration: "none",
-              color: "inherit",
-            }}
-            to={"/"}
-          >
-            pietrorea's blog
-          </Link>
-        </h1>
-      );
-    } else {
-      header = (
-        <h3
+  let rootPath = `/`;
+  if (typeof __PREFIX_PATHS__ !== `undefined` && __PREFIX_PATHS__) {
+    rootPath = __PATH_PREFIX__ + `/`;
+  }
+
+  if (location.pathname === rootPath) {
+    header = (
+      <h1 className="siteTitle">
+        <Link
           style={{
-            marginTop: 0,
-            marginBottom: "-1.75rem",
+            boxShadow: "none",
+            textDecoration: "none",
+            color: "inherit",
           }}
+          to={"/"}
         >
-          <Link
-            style={{
-              boxShadow: "none",
-              textDecoration: "none",
-              color: "inherit",
-            }}
-            to={"/"}
-          >
-            pietrorea's blog
-          </Link>
-        </h3>
-      );
-    }
-    return (
-      <div
+          pietrorea's blog
+        </Link>
+      </h1>
+    );
+  } else {
+    header = (
+      <h3
         style={{
-          marginLeft: "auto",
-          marginRight: "auto",
-          maxWidth: "42rem",
-          padding: "2.625rem 1.875rem",
+          marginTop: 0,
+          marginBottom: "-1.75rem",
         }}
       >
-        {header}
-        {children}
-      </div>
+        <Link
+          style={{
+            boxShadow: "none",
+            textDecoration: "none",
+            color: "inherit",
+          }}
+          to={"/"}
+        >
+          pietrorea's blog
+        </Link>
+      </h3>
     );
   }
-}
+  return (
+    <div
+      style={{
+        marginLeft: "auto",
+        marginRight: "auto",
+        maxWidth: "42rem",
+        padding: "2.625rem 1.875rem",
+      }}
+    >
+      {header}
+      {children}
+    </div>
+  );
+};
 
 export default Layout;
