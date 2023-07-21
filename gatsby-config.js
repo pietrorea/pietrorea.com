@@ -1,5 +1,5 @@
 require("dotenv").config({
-    path: `.env.${process.env.NODE_ENV}`,
+  path: `.env.${process.env.NODE_ENV}`,
 });
 
 module.exports = {
@@ -43,14 +43,17 @@ module.exports = {
           {
             serialize: ({ query: { site, allWpPost } }) => {
               return allWpPost.nodes.map((node) => {
-                return Object.assign({}, {
-                  title: node.title,
-                  description: node.excerpt,
-                  date: node.date,
-                  url: `${site.siteMetadata.siteUrl}${node.slugDate}${node.slug}?utm_source=rss&utm_medium=rss`,
-                  guid: site.siteMetadata.siteUrl + node.slugDate + node.slug,
-                  custom_elements: [{ "content:encoded": node.content }],
-                });
+                return Object.assign(
+                  {},
+                  {
+                    title: node.title,
+                    description: node.excerpt,
+                    date: node.date,
+                    url: `${site.siteMetadata.siteUrl}${node.slugDate}${node.slug}?utm_source=rss&utm_medium=rss`,
+                    guid: site.siteMetadata.siteUrl + node.slugDate + node.slug,
+                    custom_elements: [{ "content:encoded": node.content }],
+                  }
+                );
               });
             },
             query: `
@@ -88,6 +91,7 @@ module.exports = {
     },
     `gatsby-plugin-offline`,
     `gatsby-plugin-react-helmet`,
+    `gatsby-plugin-sitemap`,
     {
       resolve: `gatsby-plugin-canonical-urls`,
       options: {
