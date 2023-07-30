@@ -2,11 +2,12 @@ import React from "react";
 import Helmet from "react-helmet";
 import Bio from "../components/Bio";
 import Layout from "../components/layout-component";
+import { siteTitle } from "../utils/constants";
 
 const SubscribePage = (props) => (
   <Layout location={props.location}>
     <div>
-      <Helmet title={"Subscribe | pietrorea.com"} />
+      <Helmet title={`Subscribe | ${siteTitle}`} />
       <h1>Subscribe via RSS</h1>
 
       <p>
