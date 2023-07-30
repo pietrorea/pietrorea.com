@@ -104,7 +104,7 @@ svg:not(:root) {
 
 code, kbd, pre, samp {
   font-family: monospace, monospace;
-  font-size: 0.5rem
+  font-size: 1.125rem
 }
 
 figure {
@@ -234,7 +234,6 @@ h1 {
 }
 
 h1.siteTitle {
-  font-size: 3.95285rem;
   line-height: 4.375rem;
   margin-bottom: 2.625rem;
   margin-top: 0
@@ -409,7 +408,7 @@ pre {
   padding-right: 0;
   padding-top: 0;
   margin-bottom: 1.75rem;
-  font-size: 0.85rem;
+  font-size: 1.125rem;
   line-height: 1.75rem;
 }
 
@@ -569,21 +568,6 @@ p *:last-child {
 
 li>p {
   margin-bottom: calc(1.75rem / 2);
-}
-
-code {
-  font-size: 0.85rem;
-  line-height: 1.75rem;
-}
-
-kbd {
-  font-size: 0.85rem;
-  line-height: 1.75rem;
-}
-
-samp {
-  font-size: 0.85rem;
-  line-height: 1.75rem;
 }
 
 abbr {

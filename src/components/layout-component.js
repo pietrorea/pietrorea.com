@@ -1,6 +1,7 @@
 import React from "react";
 import { Link } from "gatsby";
 import "../../static/app.css";
+import { siteTitle } from "../utils/constants";
 
 const Layout = (props) => {
   const { location, children } = props;
@@ -22,7 +23,7 @@ const Layout = (props) => {
           }}
           to={"/"}
         >
-          pietrorea's blog
+          {siteTitle}
         </Link>
       </h1>
     );
@@ -42,7 +43,7 @@ const Layout = (props) => {
           }}
           to={"/"}
         >
-          pietrorea's blog
+          {siteTitle}
         </Link>
       </h3>
     );

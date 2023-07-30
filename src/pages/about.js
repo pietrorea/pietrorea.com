@@ -2,9 +2,8 @@ import React from "react";
 import Helmet from "react-helmet";
 import Bio from "../components/Bio";
 import Layout from "../components/layout-component";
+import { siteTitle } from "../utils/constants";
 import "../../static/app.css";
-
-const siteTitle = "pietrorea's blog";
 
 const AboutPage = (props) => (
   <Layout location={props.location}>
@@ -15,7 +14,7 @@ const AboutPage = (props) => (
       <p>
         Hello 👋, my name is Pietro Rea and I am a software engineer and
         sometimes engineering manager. Right now I am the Head of Engineering
-        and cofounder of{" "}
+        and co-founder of{" "}
         <a href="https://www.meadowfi.com?utm_source=pietrorea.com?utm_medium=organic">
           Meadow
         </a>
