@@ -1,5 +1,5 @@
 import React from "react";
-import profilePic from "./headshot.jpeg";
+import profilePic from "./headshot.jpg";
 import { Link } from "gatsby";
 
 const Bio = () => {
