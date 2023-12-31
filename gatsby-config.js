@@ -89,7 +89,6 @@ module.exports = {
         icon: `static/headshot.jpg`,
       },
     },
-    `gatsby-plugin-offline`,
     `gatsby-plugin-react-helmet`,
     `gatsby-plugin-sitemap`,
     {
