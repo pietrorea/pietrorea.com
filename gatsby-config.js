@@ -17,14 +17,6 @@ module.exports = {
       },
     },
     {
-      resolve: `gatsby-plugin-google-analytics`,
-      options: {
-        trackingId: "UA-85442279-5",
-        head: true,
-        anonymize: true,
-      },
-    },
-    {
       resolve: `gatsby-plugin-feed`,
       options: {
         query: `
