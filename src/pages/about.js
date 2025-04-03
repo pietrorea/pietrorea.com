@@ -116,8 +116,8 @@ const AboutPage = (props) => (
 
       <p>
         You can find me on{" "}
-        <a rel="me" href="https://mastodon.replacementhipster.com/@pietro">
-          Mastodon
+        <a rel="me" href="https://mastodon.social/@pietrorea">
+            Mastodon
         </a>{" "}
         and <a href="https://www.linkedin.com/in/pietrorea/">LinkedIn</a>. You
         can also drop me a line at pietro - at - pietrorea.com.
